@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <!--Primera CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvBonaire"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_height_cv"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBonaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNombreBonaire"
+                    android:layout_width="@dimen/ancho_nombre"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/imgBonaire"
+                    app:layout_constraintBottom_toBottomOf="@id/imgBonaire"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvTiendasBonaire"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/imgBonaire"
+                    app:layout_constraintBottom_toBottomOf="@id/imgBonaire"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--Segunda CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAqua"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_height_cv"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgAqua"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNombreAqua"
+                    android:layout_width="@dimen/ancho_nombre"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/imgAqua"
+                    app:layout_constraintBottom_toBottomOf="@id/imgAqua"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvTiendasAqua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/imgAqua"
+                    app:layout_constraintBottom_toBottomOf="@id/imgAqua"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--Tercera CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvSaler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_height_cv"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgSaler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNombreSaler"
+                    android:layout_width="@dimen/ancho_nombre"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/imgSaler"
+                    app:layout_constraintBottom_toBottomOf="@id/imgSaler"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvTiendasSaler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/imgSaler"
+                    app:layout_constraintBottom_toBottomOf="@id/imgSaler"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--Cuarta CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvArena"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_height_cv"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgArena"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNombreArena"
+                    android:layout_width="@dimen/ancho_nombre"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/imgArena"
+                    app:layout_constraintBottom_toBottomOf="@id/imgArena"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvTiendasArena"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/imgArena"
+                    app:layout_constraintBottom_toBottomOf="@id/imgArena"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:background="@color/black"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
